@@ -1,17 +1,16 @@
+<style lang="scss" scoped></style>
 <template>
-  <div id="app" :class="{ 'is-component': true }">
-    <div>
-      111
+  <div id="app">
+    <main-header></main-header>
+    <div class="main-cnt">
+      <router-view></router-view>
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: "app",
-
   methods: {},
-
   mounted() {},
 };
 </script>

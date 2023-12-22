@@ -3,6 +3,8 @@ src/utils/date.js
 src/utils/lodash.js
 examples/play
 examples/entry
+examples
+
 
 *.sh
 node_modules

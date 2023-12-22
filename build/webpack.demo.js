@@ -3,7 +3,7 @@ const webpack = require("webpack");
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-// const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const ProgressBarPlugin = require("progress-bar-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 // const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 // const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
@@ -109,6 +109,7 @@ const webpackConfig = {
       favicon: "./examples/favicon.ico",
     }),
     new VueLoaderPlugin(),
+    new ProgressBarPlugin(),
   ],
   optimization: {
     minimizer: [],
